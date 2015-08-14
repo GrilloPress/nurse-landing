@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Welcome Emissary" %></title>
+    <%= partial "/partials/meta" %>
     <%= stylesheet_link_tag "main" %>
     
      <!--[if lt IE 9]>
@@ -20,6 +21,7 @@
     <%= partial "/partials/logo_banner" %>
     <%= partial "/partials/navbar" %>
     <%= yield %>
+    <%= partial "/partials/footer" %>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
